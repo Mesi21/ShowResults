@@ -54,7 +54,7 @@ button {
 
 #board {
   margin: 30px auto;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
 }
 
@@ -90,4 +90,8 @@ button {
   padding: 3px;
   height: 20px;
   background-color: rgb(209, 209, 209);
+}
+
+#left-col {
+  margin-right: 50px;
 }
