@@ -24,7 +24,7 @@ const createBoard = (arr) => {
   titleRecent.innerHTML = 'Recent Scores';
   scoresArea.setAttribute('class', 'f-col');
   scoresArea.setAttribute('id', 'allScores');
-  scoresList.setAttribute('id', 'scores-list')
+  scoresList.setAttribute('id', 'scores-list');
   titleAdd.innerHTML = 'Add your score';
   formAddScore.setAttribute('id', 'addScoreForm');
   formAddScore.setAttribute('class', 'f-col');
@@ -36,7 +36,7 @@ const createBoard = (arr) => {
   addBtn.setAttribute('value', 'Submit');
   addBtn.setAttribute('id', 'add-btn');
   let idLi = 1;
-  arr.forEach(player => {
+  arr.forEach((player) => {
     const currLi = document.createElement('li');
     currLi.setAttribute('id', idLi);
     if (idLi % 2 === 0) {
@@ -45,9 +45,9 @@ const createBoard = (arr) => {
       currLi.setAttribute('class', 'row-odd');
     }
     idLi += 1;
-    currLi.innerHTML = `${player.name}: ${player.score}`
+    currLi.innerHTML = `${player.name}: ${player.score}`;
     scoresList.appendChild(currLi);
-  })
+  });
   formAddScore.append(inputName, inputScore, addBtn);
   titleLeft.append(titleRecent, btnRefresh);
   scoresArea.appendChild(scoresList);
@@ -55,6 +55,6 @@ const createBoard = (arr) => {
   tableRight.append(titleAdd, formAddScore);
   tableArea.append(tableLeft, tableRight);
   return tableArea;
-}
+};
 
 export default createBoard;

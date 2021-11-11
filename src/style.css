@@ -55,8 +55,8 @@ button {
 #board {
   margin: 30px auto;
   justify-content: space-between;
-  align-items: flex-start
-};
+  align-items: flex-start;
+}
 
 #left {
   width: 100%;

@@ -4,8 +4,7 @@ const createHeader = () => {
   headerEle.setAttribute('id', 'header');
   title.innerHTML = 'LeaderBoard';
   headerEle.appendChild(title);
-  console.log(headerEle);
   return headerEle;
-}
+};
 
 export default createHeader;
